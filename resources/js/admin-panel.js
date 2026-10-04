@@ -141,6 +141,14 @@
             }
 
             return response;
+        },
+
+        toast(detail) {
+            window.dispatchEvent(new CustomEvent('admin-panel:toast', { detail }));
+        },
+
+        openCommandPalette() {
+            window.dispatchEvent(new CustomEvent('open-command-palette'));
         }
     };
 

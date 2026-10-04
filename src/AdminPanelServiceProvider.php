@@ -173,6 +173,8 @@ class AdminPanelServiceProvider extends ServiceProvider
             'dropdown' => 'admin-panel::components.dropdown',
             'theme-toggle' => 'admin-panel::components.theme-toggle',
             'empty-state' => 'admin-panel::components.empty-state',
+            'command-palette' => 'admin-panel::components.command-palette',
+            'toast' => 'admin-panel::components.toast',
         ];
 
         foreach ($components as $alias => $view) {

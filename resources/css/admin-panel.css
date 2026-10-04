@@ -891,3 +891,159 @@ html[data-sidebar-collapsed="true"] .admin-sidebar .sidebar-link {
   height: 100%;
   object-fit: cover;
 }
+
+/* Command Palette (Cmd+K) Modern Glassmorphism */
+.admin-command-palette-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 100;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 4rem 1rem 1rem;
+}
+
+.admin-command-palette-panel {
+  background-color: var(--admin-surface);
+  border: 1px solid var(--admin-border);
+  border-radius: calc(var(--admin-radius) + 4px);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35);
+  width: 100%;
+  max-width: 38rem;
+  overflow: hidden;
+  animation: commandPanelIn 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes commandPanelIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.admin-command-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--admin-border);
+}
+
+.admin-command-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  color: var(--admin-text);
+  outline: none;
+  font-family: inherit;
+}
+
+.admin-command-input::placeholder {
+  color: var(--admin-text-muted);
+}
+
+.admin-command-list {
+  max-height: 22rem;
+  overflow-y: auto;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.admin-command-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.625rem 0.875rem;
+  border-radius: var(--admin-radius);
+  color: var(--admin-text);
+  cursor: pointer;
+  transition: all 100ms ease;
+}
+
+.admin-command-item.active,
+.admin-command-item:hover {
+  background-color: var(--admin-primary-subtle);
+  color: var(--admin-primary-subtle-text);
+}
+
+.admin-command-footer {
+  padding: 0.625rem 1.25rem;
+  background-color: var(--admin-surface-hover);
+  border-top: 1px solid var(--admin-border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  font-size: 0.75rem;
+  color: var(--admin-text-muted);
+}
+
+.admin-command-footer kbd {
+  background-color: var(--admin-surface);
+  border: 1px solid var(--admin-border);
+  border-radius: 0.25rem;
+  padding: 0.125rem 0.375rem;
+  font-weight: 600;
+}
+
+/* Toast Notifications Container */
+.admin-toast-container {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 110;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 24rem;
+  width: 100%;
+  pointer-events: none;
+}
+
+.admin-toast {
+  pointer-events: auto;
+  background-color: var(--admin-surface);
+  border: 1px solid var(--admin-border);
+  border-radius: var(--admin-radius);
+  box-shadow: var(--admin-shadow-lg);
+  padding: 0.875rem 1.125rem;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: all 150ms ease;
+}
+
+.admin-toast-success {
+  border-left: 4px solid var(--admin-success);
+}
+
+.admin-toast-error {
+  border-left: 4px solid var(--admin-danger);
+}
+
+.admin-toast-warning {
+  border-left: 4px solid var(--admin-warning);
+}
+
+.admin-toast-info {
+  border-left: 4px solid var(--admin-info);
+}
+
+/* Modern Card Hover Elevation */
+.admin-card {
+  transition: transform 180ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 180ms cubic-bezier(0.16, 1, 0.3, 1), border-color 180ms ease;
+}
+
+.admin-card:hover {
+  border-color: rgba(99, 102, 241, 0.25);
+  box-shadow: var(--admin-shadow-md);
+}

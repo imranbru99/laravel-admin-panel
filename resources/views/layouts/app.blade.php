@@ -31,6 +31,12 @@
         </div>
     </div>
 
+    <!-- Global Interactive Command Palette (Cmd+K) -->
+    <x-admin-panel::command-palette />
+
+    <!-- Global Toast Notifications Container -->
+    <x-admin-panel::toast />
+
     @include('admin-panel::layouts.partials.footer')
 </body>
 </html>

@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/imranbru99/laravel-admin-panel/main/art/banner-dark.png">
-    <img alt="ImranDevBD Laravel Admin Panel" src="https://raw.githubusercontent.com/imranbru99/laravel-admin-panel/main/art/banner.png" width="100%" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/imranbru99/laravel-admin-panel/main/art/banner-dark.svg">
+    <img alt="ImranDevBD Laravel Admin Panel" src="https://raw.githubusercontent.com/imranbru99/laravel-admin-panel/main/art/banner.svg" width="100%" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
   </picture>
 </p>
 
