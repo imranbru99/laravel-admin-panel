@@ -1,0 +1,13 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+
+parameters:
+    paths:
+        - src/
+        - config/
+
+    level: 8
+
+    ignoreErrors:
+        - '#Unsafe usage of new static\(\)#'
+        - '#Called .env. outside of the config directory#'
