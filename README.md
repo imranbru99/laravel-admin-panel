@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/imrandevbd/laravel-admin-panel/main/art/banner-dark.png">
-    <img alt="ImranDevBD Laravel Admin Panel" src="https://raw.githubusercontent.com/imrandevbd/laravel-admin-panel/main/art/banner.png" width="100%" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/imranbru99/laravel-admin-panel/main/art/banner-dark.png">
+    <img alt="ImranDevBD Laravel Admin Panel" src="https://raw.githubusercontent.com/imranbru99/laravel-admin-panel/main/art/banner.png" width="100%" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
   </picture>
 </p>
 
@@ -15,7 +15,7 @@
   <a href="https://php.net"><img src="https://img.shields.io/badge/PHP-8.2%20--%208.5+-777bb4.svg?style=for-the-badge&logo=php&logoColor=white" alt="PHP 8.2+"></a>
   <a href="https://laravel.com"><img src="https://img.shields.io/badge/Laravel-11%20%7C%2012%20%7C%2013-ff2d20.svg?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel 11-13"></a>
   <a href="https://phpstan.org"><img src="https://img.shields.io/badge/Larastan-Level%208-brightgreen.svg?style=for-the-badge" alt="Larastan Level 8"></a>
-  <a href="https://github.com/imrandevbd/laravel-admin-panel/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="MIT License"></a>
+  <a href="https://github.com/imranbru99/laravel-admin-panel/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="MIT License"></a>
 </p>
 
 ---
@@ -338,7 +338,7 @@ We welcome contributions from developers worldwide!
 ## 📄 License
 
 The ImranDevBD Laravel Admin Panel is open-sourced software licensed under the [MIT license](LICENSE).
-Built with ❤️ by [Imran Hossain](https://github.com/imrandevbd) and contributors.
+Built with ❤️ by [Imran Hossain](https://github.com/imranbru99) and contributors.
 
 ---
 
